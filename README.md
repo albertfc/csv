@@ -2,7 +2,7 @@ To build, test and run the project, you need to have [maven](https://maven.apach
 
 Build and run tests:
 ```bash
-$ mvn test
+$ mvn package test
 ``` 
 
 Run:

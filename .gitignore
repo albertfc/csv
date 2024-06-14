@@ -1,3 +1,5 @@
+*.csv
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -7,7 +9,9 @@ target/
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
+.idea/cody_history.xml
 .idea/libraries/
+.idea/sonarlint/
 *.iws
 *.iml
 *.ipr
