@@ -14,6 +14,7 @@ public class CSVDataSource implements DataSource {
 
   public CSVDataSource(File inputFile) {
     try {
+      // Build a buffered iterator over the input records, avoiding reading the whole file into memory
       reader = Files.newBufferedReader(inputFile.toPath());
       records = reader.lines()
           .filter(header -> !header.startsWith("#"))

@@ -4,7 +4,6 @@ public class SerialDataProcessor implements DataProcessor {
 
   @Override
   public void run(DataSource dataSource, DataDestination dataDestination) {
-
     while(dataSource.hasNext()) {
       InputRecord inputRecord = dataSource.next();
       dataDestination.write(new OutputRecord(

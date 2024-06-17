@@ -12,12 +12,11 @@ public class Main {
 
     Logger logger = Logger.getLogger(Main.class.getName());
 
-    File inputFile = new File(INPUT_CSV);
-    File outputFile = new File(OUTPUT_CSV);
+    File inputFile = new File(args.length > 0 ? args[0] : INPUT_CSV);
+    File outputFile = new File(args.length > 1 ? args[1] : OUTPUT_CSV);
     logger.info("Input file: " + inputFile.getAbsolutePath());
     logger.info("Output file: " + outputFile.getAbsolutePath());
     logger.info("Processing...");
-
     try (
         DataSource dataSource = new CSVDataSource(inputFile);
         DataDestination dataDestination = new CSVDataDestination(outputFile);

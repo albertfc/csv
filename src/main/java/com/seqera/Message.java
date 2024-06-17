@@ -3,7 +3,7 @@ package com.seqera;
 public interface Message {
   MessageType getType();
 
-  default ResultMessage asResultMessage() {
+  default FutureMessage asFutureMessage() {
     throw new UnsupportedOperationException();
   }
 }

@@ -1,6 +1,6 @@
 package com.seqera;
 
 public enum MessageType {
-  RESULT,
+  FUTURE,
   EOF,
 }

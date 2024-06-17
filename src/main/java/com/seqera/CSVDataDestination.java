@@ -2,7 +2,6 @@ package com.seqera;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.MessageFormat;
 
@@ -27,7 +26,7 @@ public class CSVDataDestination implements DataDestination {
   }
 
   @Override
-  public void close() throws IOException {
+  public void close() {
     printWriter.close();
   }
 }
